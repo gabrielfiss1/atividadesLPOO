@@ -33,6 +33,7 @@ public class FuncionarioController {
         System.out.println(funcionariosMap);
 
         System.out.println("\n pesquisa no Map");
+        System.out.println("teste");
         System.out.println(funcionariosMap.get(funcionario1.getSalario()));//vantagem de pesquisa rapida 
 
 
