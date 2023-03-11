@@ -2,10 +2,7 @@ package objetivo1.controller;
 
 import objetivo1.model.Aluno;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class AlunoController {
     public static void main(String[] args) {
@@ -52,7 +49,11 @@ public class AlunoController {
         alunosList.add(a4);
         alunosList.add(a5);
         alunosList.add(a6);
+        alunosList.sort(Comparator.comparing(Aluno::getId)); //ordenando por ordem crescente
         System.out.println(alunosList);
+
+        Aluno alunoFilter = alunosList.stream().filter(Aluno -> Aluno.getId().equals(5)).findAny().orElse(null);
+        System.out.println(alunoFilter);
 
         Map<Integer, Aluno> alunosMap = new HashMap<>();
         alunosMap.put(1, a3);
