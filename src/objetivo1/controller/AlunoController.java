@@ -2,6 +2,11 @@ package objetivo1.controller;
 
 import objetivo1.model.Aluno;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 public class AlunoController {
     public static void main(String[] args) {
         Aluno a1 = new Aluno();
@@ -40,7 +45,22 @@ public class AlunoController {
         System.out.println(a2.getSobrenome());
         System.out.println(a2.getEmail());
 
+        List<Aluno> alunosList = new ArrayList<>();
+        alunosList.add(a1);
+        alunosList.add(a2);
+        alunosList.add(a3);
+        alunosList.add(a4);
+        alunosList.add(a5);
+        alunosList.add(a6);
+        System.out.println(alunosList);
 
-
+        Map<Integer, Aluno> alunosMap = new HashMap<>();
+        alunosMap.put(1, a3);
+        alunosMap.put(2, a4);
+        alunosMap.put(3, a5);
+        alunosMap.put(4, a6);
+        alunosMap.put(5, a1);
+        alunosMap.put(6, a2);
+        System.out.println(alunosMap);
     }
 }
