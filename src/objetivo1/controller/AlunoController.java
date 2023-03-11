@@ -18,7 +18,27 @@ public class AlunoController {
         System.out.println(a5);
         System.out.println(a6);
 
+        a1.setId(5);
+        a1.setCpf(999222333);
+        a1.setNome("Rosangela");
+        a1.setSobrenome("Rosa");
+        a1.setEmail("rorongela@yahoo.com");
+        System.out.println(a1.getId());
+        System.out.println(a1.getCpf());
+        System.out.println(a1.getNome());
+        System.out.println(a1.getSobrenome());
+        System.out.println(a1.getEmail());
 
+        a2.setId(6);
+        a2.setCpf(229222333);
+        a2.setNome("Ana");
+        a2.setSobrenome("Kraquen");
+        a2.setEmail("anaquen@yahoo.com");
+        System.out.println(a2.getId());
+        System.out.println(a2.getCpf());
+        System.out.println(a2.getNome());
+        System.out.println(a2.getSobrenome());
+        System.out.println(a2.getEmail());
 
 
 
