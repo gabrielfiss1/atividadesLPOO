@@ -69,5 +69,6 @@ public class AlunoController {
 
         System.out.println(alunosMap.get(a1.getId()));
         System.out.println(alunosMap);
+        
     }
 }
