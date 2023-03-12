@@ -63,5 +63,7 @@ public class AlunoController {
         alunosMap.put(5, a1);
         alunosMap.put(6, a2);
         System.out.println(alunosMap);
+
+        System.out.println(alunosMap.get(a1.getId()));
     }
 }
