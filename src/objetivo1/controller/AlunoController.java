@@ -51,6 +51,9 @@ public class AlunoController {
         alunosList.add(a6);
         alunosList.sort(Comparator.comparing(Aluno::getId)); //ordenando por ordem crescente
         System.out.println(alunosList);
+        System.out.println("ORDEM DECRESCENTE-------------");
+        alunosList.sort(Comparator.comparing(Aluno::getId).reversed());
+        System.out.println(alunosList);
 
         Aluno alunoFilter = alunosList.stream().filter(Aluno -> Aluno.getId().equals(5)).findAny().orElse(null);
         System.out.println(alunoFilter);
@@ -65,5 +68,6 @@ public class AlunoController {
         System.out.println(alunosMap);
 
         System.out.println(alunosMap.get(a1.getId()));
+        System.out.println(alunosMap);
     }
 }
