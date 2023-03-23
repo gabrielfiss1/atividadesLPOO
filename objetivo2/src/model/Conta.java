@@ -7,4 +7,7 @@ public abstract class Conta { //super classe //generica
         System.out.println("depositou");
     }
 
+    public double getSaldo() {
+        return saldo;
+    }
 }
