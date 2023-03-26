@@ -14,11 +14,14 @@ public class ContaController {
         ContaCorrente cc1 = new ContaCorrente();
         ContaPoupanca cp1 = new ContaPoupanca();
         ContaPoupancaEspecial cpe1 = new ContaPoupancaEspecial();
-        cc1.deposita(10.8);
+        cc1.deposita(100000.10);
         System.out.println(cc1);
         System.out.println(cp1);
         cpe1.deposita(500.00);
         System.out.println(cpe1);
+
+        cc1.saca(300.00);
+        System.out.println(cc1);
 
         List<Conta> contaList = new ArrayList<>();
         contaList.add(cc1);
@@ -27,7 +30,7 @@ public class ContaController {
 
         //saldo total sistema
         System.out.println(
-                contaList.stream().mapToDouble(c -> c.getSaldo()).sum()
+                contaList.stream().mapToDouble(Conta::getSaldo).sum()
         );
 
     }
