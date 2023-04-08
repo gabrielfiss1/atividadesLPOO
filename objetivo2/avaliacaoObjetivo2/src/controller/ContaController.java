@@ -42,7 +42,12 @@ public class ContaController {
 
         System.out.println(associados.toString());
 
-        cp1.deposita(10.0);
+        cp1.deposita(1000.0);
         System.out.println(cp1);
+        cp1.atualiza(5.0);
+        System.out.println(cp1);
+        cp1.saca(50.0);
+        System.out.println(cp1);
+
     }
 }

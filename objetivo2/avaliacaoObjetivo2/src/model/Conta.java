@@ -26,6 +26,6 @@ public abstract class Conta {
         this.saldo -= valor;
     }
     public void atualiza(Double taxa){
-        this.saldo = taxa/100 * saldo;
+        this.saldo += this.saldo * (taxa / 100);
     }
 }
