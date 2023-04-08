@@ -5,14 +5,12 @@ public class Cliente implements Associado {
     public Cliente() {
     }
 
-    public Cliente(Double saldo) {
-        super(saldo);
-    }
+
 
     @Override
     public String toString() {
         return "\nCliente{" +
-                "saldo=" + saldo +
+                "saldo=" +
                 '}';
     }
 
