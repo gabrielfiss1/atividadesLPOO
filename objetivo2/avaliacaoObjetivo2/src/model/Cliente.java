@@ -1,22 +1,23 @@
 package model;
 
-public class ContaCorrente extends Conta implements Associado {
-    public ContaCorrente() {
+public class Cliente implements Associado {
+    private String nome;
+    public Cliente() {
     }
 
-    public ContaCorrente(Double saldo) {
+    public Cliente(Double saldo) {
         super(saldo);
     }
 
     @Override
     public String toString() {
-        return "\nContaCorrente{" +
+        return "\nCliente{" +
                 "saldo=" + saldo +
                 '}';
     }
 
     @Override
     public Double lucros(Integer qdeContas, Double valorCota) {
-        return this.saldo = qdeContas * valorCota;
+        return  qdeContas * valorCota;
     }
 }
