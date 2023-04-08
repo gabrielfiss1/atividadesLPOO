@@ -48,6 +48,12 @@ public class ContaController {
         System.out.println(cp1);
         cp1.saca(50.0);
         System.out.println(cp1);
+        System.out.println();
+
+        cc1.deposita(500.00);
+        System.out.println(cc1);
+        cc1.saca(400.00);
+        System.out.println(cc1);
 
     }
 }
