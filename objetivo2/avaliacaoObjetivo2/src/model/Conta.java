@@ -3,6 +3,10 @@ package model;
 public abstract class Conta {
     protected Double saldo;
 
+    public Conta(Double saldo) {
+        this.saldo = saldo;
+    }
+
     public Double getSaldo() {
         return saldo;
     }
