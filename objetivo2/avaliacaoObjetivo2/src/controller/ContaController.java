@@ -3,6 +3,7 @@ package controller;
 import model.*;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 public class ContaController {
@@ -55,5 +56,19 @@ public class ContaController {
         cc1.saca(400.00);
         System.out.println(cc1);
 
+        cc1.qntCotas(100);
+        cc2.qntCotas(400);
+        cc3.qntCotas(600);
+        c1.qntCotas(300);
+        c2.qntCotas(600);
+        c3.qntCotas(600);
+
+
+        System.out.println(associados.toString());
+
+       associados.sort(Comparator.comparing(Associado::getCotas).reversed());
+        System.out.println(associados);
     }
+
+
 }
