@@ -3,6 +3,7 @@ package controller;
 import model.*;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
@@ -63,11 +64,20 @@ public class ContaController {
         c2.qntCotas(600);
         c3.qntCotas(600);
 
-
         System.out.println(associados.toString());
 
        associados.sort(Comparator.comparing(Associado::getCotas).reversed());
         System.out.println(associados);
+        System.out.println("QUEBRA");
+
+        Collections.sort(contas, Comparator.comparing(Conta::getSaldo).reversed());
+        System.out.println(contas);
+
+        System.out.println("Quebra");
+
+        Collections.sort(associados, Comparator.comparing(Associado::getLucros).reversed());
+        System.out.println(associados);
+
     }
 
 
