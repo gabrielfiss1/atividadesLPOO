@@ -15,7 +15,7 @@ public class Tanque extends Personagem{
 
     @Override
     public String toString() {
-        return "Tanque{" +
+        return " \n Tanque{" +
                 "x=" + x +
                 ", y=" + y +
                 '}';

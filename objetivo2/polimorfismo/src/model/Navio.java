@@ -16,7 +16,7 @@ public class Navio extends Personagem{
 
     @Override
     public String toString() {
-        return "Navio{" +
+        return " \n Navio{" +
                 "x=" + x +
                 ", y=" + y +
                 '}';
