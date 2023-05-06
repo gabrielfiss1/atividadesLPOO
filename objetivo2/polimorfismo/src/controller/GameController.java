@@ -32,7 +32,13 @@ public class GameController {
             p.desenhar(); // agindo polimorfico qual desenhar vai chamar
             if (p instanceof Aviao) {
                 ((Aviao) p).mover(7,2,3);
+            } else if (p instanceof Navio) {
+                p.mover(9,6);
+            } else if (p instanceof Tanque) {
+                p.mover(10,10);
             }
         });
+        System.out.println("Posição atual");
+        System.out.println(personagens_list);
     }
 }
