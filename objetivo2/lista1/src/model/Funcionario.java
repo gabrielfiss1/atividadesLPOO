@@ -30,4 +30,12 @@ public class Funcionario {
     public Double getBonus(){
         return salario * 0.05;
     }
+
+    @java.lang.Override
+    public java.lang.String toString() {
+        return "Funcionario{" +
+                "nome='" + nome + '\'' +
+                ", salario=" + salario +
+                '}';
+    }
 }
