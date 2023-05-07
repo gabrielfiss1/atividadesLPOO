@@ -13,4 +13,5 @@ public class Vendedor extends Funcionario {
         this.local = local;
         this.pedidos = pedidos;
     }
+
 }
