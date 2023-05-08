@@ -23,7 +23,25 @@ public class SystemController {
         Produto produto2 = new Produto(2, "Mesa digital", 1, 500.0, fornecedor2);
         Item item1 = new Item(1, 3.0, 1);
         Item item2 = new Item(2, 2.0, 1);
+        if (produto1.getQuantidade() > 0 && produto2.getQuantidade() > 0) {
+            System.out.println("\nRegistro das vendas:");
+            List<Pedido> pedidos = new ArrayList();
+            pedidos.add(pedido1);
+            pedidos.add(pedido2);
+            System.out.println(pedidos);
+            pedido1.getItems().add(item1);
+            pedido2.getItems().add(item2);
+            vendedor1.getPedidos().add(pedido1);
+            vendedor2.getPedidos().add(pedido2);
+            System.out.println("\nEstoque das vendas:");
+            produto1.setQuantidade(produto1.getQuantidade() - item1.getQuantidade());
+            produto2.setQuantidade(produto2.getQuantidade() - item2.getQuantidade());
+            System.out.println("\nVenda 1: ");
+            System.out.println(vendedor1.getPedidos());
+            System.out.println("\nVenda 2: ");
+            System.out.println(vendedor2.getPedidos());
 
+        }
     }
 }
 

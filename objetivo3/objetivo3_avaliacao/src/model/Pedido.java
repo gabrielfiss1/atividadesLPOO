@@ -65,4 +65,15 @@ public class Pedido {
     public void setItems(List<Item> items) {
         this.items = items;
     }
+
+    @Override
+    public String toString() {
+        return "Pedido{" +
+                "numero=" + numero +
+                ", data=" + data +
+                ", valor=" + valor +
+                ", vendedor=" + vendedor +
+                ", items=" + items +
+                '}';
+    }
 }
