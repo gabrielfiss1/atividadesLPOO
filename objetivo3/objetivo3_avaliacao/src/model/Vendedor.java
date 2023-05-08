@@ -14,10 +14,9 @@ public class Vendedor extends Funcionario {
         this.pedidos = pedidos;
     }
 
-    public Vendedor(int matricula, String nome, String endereco, String bairro, String cep, String cidade, String estado, String local, List<Pedido> pedidos) {
+    public Vendedor(int matricula, String nome, String endereco, String bairro, String cep, String cidade, String estado, String local) {
         super(matricula, nome, endereco, bairro, cep, cidade, estado);
         this.local = local;
-        this.pedidos = pedidos;
     }
 
     public String getLocal() {
@@ -38,9 +37,17 @@ public class Vendedor extends Funcionario {
 
     @Override
     public String toString() {
-        return "Vendedor{" +
-                "local='" + local + '\'' +
-                ", pedidos=" + pedidos +
+        int varMat = this.getMatricula();
+        return "Vendedor{matricula=" + varMat + "," +
+                " nome='" + this.getNome() +
+                "', endereco='" + this.getEndereco() +
+                "', bairro='" + this.getBairro() +
+                "', cep='" + this.getCep() +
+                "', cidade='" + this.getCidade() +
+                "', estado='" + this.getEstado() +
+                "'local='" + this.local +
                 '}';
     }
 }
+
+
