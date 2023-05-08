@@ -69,8 +69,28 @@ public class SystemController {
                 }
 
                 System.out.print("\nTotal fornecido:" + NumberFormat.getCurrencyInstance().format(totalFornecido) + "\n");
-            }
+            }    comportamento1();
+    }
+
+
+    private static void comportamento1() {
+        mythrowException();
+    }
+
+    private static void mythrowException() {
+        try {
+            System.out.println("\nErro, estoque insuficiente.\n");
+            throw new SystemControllerEstoqueInsuficienteExcecao();
+
+        } catch (SystemControllerEstoqueInsuficienteExcecao var2) {
+            var2.printStackTrace();
+
+        } finally {
+            System.err.println("Finalmente executado.");
+        }
+
     }
 }
-   
+
+
 
