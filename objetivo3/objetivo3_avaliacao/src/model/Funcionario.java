@@ -79,4 +79,16 @@ public class Funcionario {
         this.estado = estado;
     }
 
+    @Override
+    public String toString() {
+        return "\n Funcionario{" +
+                "matricula=" + matricula +
+                ", nome='" + nome + '\'' +
+                ", endereco='" + endereco + '\'' +
+                ", bairro='" + bairro + '\'' +
+                ", cep='" + cep + '\'' +
+                ", cidade='" + cidade + '\'' +
+                ", estado='" + estado + '\'' +
+                '}';
+    }
 }

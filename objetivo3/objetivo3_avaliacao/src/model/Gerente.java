@@ -15,4 +15,18 @@ public class Gerente extends Funcionario{
         this.formacao = formacao;
     }
 
+    public String getFormacao() {
+        return formacao;
+    }
+
+    public void setFormacao(String formacao) {
+        this.formacao = formacao;
+    }
+
+    @Override
+    public String toString() {
+        return "Gerente{" +
+                "formacao='" + formacao + '\'' +
+                '}';
+    }
 }
