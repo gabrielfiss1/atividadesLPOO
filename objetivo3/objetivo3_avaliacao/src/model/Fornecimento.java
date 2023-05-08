@@ -1,10 +1,11 @@
 package model;
 
 
-import java.util.Date;
+import java.util.Calendar;
+
 
 public class Fornecimento {
-    private Date data;
+    private Calendar data;
     private double valorTotal;
     private Fornecedor fornecedor;
     private Produto produto;
@@ -12,18 +13,18 @@ public class Fornecimento {
     public Fornecimento() {
     }
 
-    public Fornecimento(Date data, double valorTotal, Fornecedor fornecedor, Produto produto) {
+    public Fornecimento(Calendar data, double valorTotal, Fornecedor fornecedor, Produto produto) {
         this.data = data;
         this.valorTotal = valorTotal;
         this.fornecedor = fornecedor;
         this.produto = produto;
     }
 
-    public Date getData() {
+    public Calendar getData() {
         return data;
     }
 
-    public void setData(Date data) {
+    public void setData(Calendar data) {
         this.data = data;
     }
 
@@ -53,7 +54,7 @@ public class Fornecimento {
 
     @Override
     public String toString() {
-        return "Fornecimento{" +
+        return "\nFornecimento{" +
                 "data=" + data +
                 ", valorTotal=" + valorTotal +
                 ", fornecedor=" + fornecedor +
